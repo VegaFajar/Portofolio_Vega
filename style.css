@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat';
+    background-color: #18181B;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 200px;
+}
+
+.nav-link{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #07f7e3;
+    transition: all 0.4s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font: #fff;
+    background-color: #07f7e3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4 ease;
+}
+
+.button:hover{
+    background-color: #07f7e3;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1200px 50px #07f7e3;
+    z-index: -100;
+}
+
+/* Perkenalan */
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .gambar{
+    position: relative;
+}
+
+header .gambar img{
+    max-width: 350px;
+    margin: auto;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+}
+
+header .gambar img:hover{
+    box-shadow: #07f7e3;
+    border-color: #07f7e3;
+}
+
+/* About */
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+section .header:hover{
+    color: #07f7e3;
+}
+
+.about{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.about .card{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 5rem;
+}
+
+.about .card:hover{
+    background-color: #323232;
+    border-color: #07f7e3;
+}
+
+.about .card span{
+    display: block;
+    margin-bottom: 1rem;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.about .card p{
+    color:#fff;
+    margin-bottom: 1rem;
+}
+
+/* skill dan experience| */
+section .skill-exp{
+    padding: 6rem 0;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+
+}
+
+section .header{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.grid-skill{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+    gap: 3rem;
+    align-items: center;
+}
+
+.exp {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    color: #fff;
+    margin: 0 auto;
+    width: fit-content
+}
+
+.exp-kiri{
+    padding: 6rem 0;
+    position: relative;
+}
+
+.exp .line{
+    padding: 0 0.7rem;
+    position: relative;
+}
+
+.exp .line div{
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+}
+
+.my-exp {
+    margin: 0.3rem 0;
+}
+
+.exp-date{
+    margin-bottom: 3rem;
+}
+
+.exp .line div::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.exp-kanan {
+    line-height: 2rem;
+    padding: 0 1rem;
+    color: #fff;
+}
+
+/* Footer */
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+
+}
+
+footer .kolom .logo{
+    margin-top: 5rem;
+    max-width: 200px;
+    margin-bottom: 2rem;
+}
+
+footer .kolom .sosmed{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 150px;
+}
+
+footer .kolom .sosmed a{
+    color: #07f7e3;
+    border: 1px solid transparent;
+    padding: 2px 5px;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .kolom .sosmed a:hover{
+    background-color: #07f7e3;
+    border-color: #07f7e3;
+}
+
+footer .kolom h4{
+    color: #fff;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .kolom > a{
+    display: block;
+    color: #fff;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .kolom > a:hover{
+    color: #07f7e3;
+}
+
+.kopikanan {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
